@@ -21,8 +21,15 @@ public class CharacterAI : MonoBehaviour {
         if (!animator.GetBool("Grounded"))
         {
             animator.SetBool("Grounded", true);
+            agent.enabled = true;
             agent.isStopped = true;
         }   
+    }
+
+    private void Start()
+    {
+        if (!agent.isOnNavMesh)
+            agent.enabled = false;
     }
 
     private void Update()
