@@ -17,6 +17,8 @@ public class PerformanceTester : MonoBehaviour {
     {
         currentObjects = UnityEngine.Object.FindObjectsOfType<Transform>().Length;
         text.text = "Current GameObjects : " + currentObjects;
+
+
     }
 
 }
