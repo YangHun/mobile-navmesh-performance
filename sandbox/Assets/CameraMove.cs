@@ -39,10 +39,10 @@ public class CameraMove : MonoBehaviour {
                 else if (distance < preDistance)
                     Camera.main.orthographicSize += Speed * 5.0f;
 
-                if (Camera.main.orthographicSize > 10.0f)
-                    Camera.main.orthographicSize = 10.0f;
-                else if (Camera.main.orthographicSize < 3.0f)
-                    Camera.main.orthographicSize = 3.0f;
+                if (Camera.main.orthographicSize > 4.0f)
+                    Camera.main.orthographicSize = 4.0f;
+                else if (Camera.main.orthographicSize < 2.0f)
+                    Camera.main.orthographicSize = 2.0f;
 
                 preDistance = distance;
 
